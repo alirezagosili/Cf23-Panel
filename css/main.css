@@ -14,6 +14,7 @@
         --color-white: #fff;
         --border-yellow: #FFC453;
         --border-green: #29E489;
+        --border-black:#29292980;
         /* fonts */
         --font-inter: Inter;
 }
@@ -22,7 +23,6 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: normal;
     background-color: var(--color-gray-100);
-    padding: 80px 0;
 }
 h1 {
     font-family: Inter;
@@ -40,11 +40,28 @@ h2 {
 }
 h3 {
     font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+}
+h4 {
+    font-family: Inter;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
     text-align: left;
     color: var(--color-white);
+}
+h5 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+}
+.pl-6 {
+    padding-left: 6px;
 }
 .text {
     font-family: Inter;
@@ -68,10 +85,12 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+    padding: 16px;
     border: 3px solid blue;
 }
 .left-box {
     display: flex;
+    flex-basis: 416px;
     gap: 16px;
     flex-direction: column;
     border: 2px solid red;
@@ -84,8 +103,7 @@ h3 {
     gap: 42px;
     height: max-content;
     min-height: 178px;
-    min-width: 398px;
-    border: 2px solid green;
+    /* min-width: 398px; */
     border-radius: 16px;
     padding: 16px;
     color: var(--color-white);
@@ -113,7 +131,6 @@ h3 {
     min-width: 398px;
     height: max-content;
     min-height: 194px;
-    border: 2px solid green;
     border-radius: 16px;
     padding: 16px;
     color: var(--color-white);
@@ -129,11 +146,42 @@ h3 {
     padding-left: 12px;
     border-left:2px solid var(--border-green);
 }
+/* email-box */
 .left-box .email-box {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+    min-width: 398px;
+    height: max-content;
+    border-radius: 16px;
+    padding: 16px;
+    color: var(--color-white);
+    background-color: var(--color-darkslategray);
+    box-shadow: 0px 0px 2px 0px #0000001F, 0px 4px 8px 0px #00000024;
     min-height: 266px;
     max-width: 416px;
-    border: 2px solid green;
+}
+.left-box .email-box ul li {
+    display: flex;
+    align-items: center;
+    border-bottom:1px solid #29292980;
+}
+.left-box .email-box ul li:last-child {
+    border-bottom: none;
+}
+.left-box .email-box ul li img {
+    display: block;
+}
+.left-box .email-box ul li div h5 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 336px;
+}
+.email-box .image {
+    margin-left: -10px;
+    margin-top: 5px;
 }
 
 @media screen and (max-width: 430px) {
