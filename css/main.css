@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 :root {
         /* Colors */
@@ -16,7 +18,96 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
     line-height: normal;
+    background-color: var(--color-gray-100);
+    padding: 80px 0;
+}
+h1 {
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+}
+h2 {
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+}
+.text {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    color: var(--color-gray-500);
+
+}
+.container {
+    width: 100%;
+}
+
+.safe-width {
+    max-width: 1280px;
+    margin:0 auto;
+}
+
+.main {
+    display: flex;
+    gap: 16px;
+    border: 3px solid blue;
+}
+.left-box {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    border: 2px solid red;
+    padding-bottom: 18px;
+}
+.left-box .weather-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 42px;
+    height: max-content;
+    min-height: 178px;
+    min-width: 398px;
+    border: 2px solid green;
+    border-radius: 16px;
+    padding: 16px;
+    color: var(--color-white);
+    background-color: var(--color-darkslategray);
+    box-shadow: 0px 0px 2px 0px #0000001F, 0px 4px 8px 0px #00000024;
+}
+.left-box .weather-box .weather-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left-box .weather-box .weather-icon{
+    margin-bottom: -9px;
+}
+.left-box .weather-box .weather-icon img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.left-box .date-box {
+    height: max-content;
+    min-height: 194px;
+    max-width: 416px;
+    border: 2px solid green;
+}
+.left-box .email-box {
+    flex: 1;
+    min-height: 266px;
+    max-width: 416px;
+    border: 2px solid green;
+}
+
+@media screen and (max-width: 430px) {
+    body {
+        padding: 33px 16px;
+    }
 }
