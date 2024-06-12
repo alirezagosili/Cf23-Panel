@@ -23,6 +23,7 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: normal;
     background-color: var(--color-gray-100);
+    box-sizing: border-box;
 }
 h1 {
     font-family: Inter;
@@ -197,7 +198,6 @@ a {
     flex-wrap: wrap;
     gap: 16px;
     flex-basis: 848px;
-    border: 2px solid red;
 }
 /* news-box */
 .news-box {
@@ -274,7 +274,7 @@ a {
 .quotes-box {
     display: flex;
     flex-basis:489px;
-    min-height: 189px;
+    max-height: 189px;
     flex-direction: column;
     border-radius: 16px;
     gap: 29px;
@@ -287,17 +287,75 @@ a {
     display: flex;
     justify-content: flex-end;
 }
-
+/* feeling-box */
+.feeling-box {
+    display: flex;
+    /* flex-basis:343px; */
+    width: 343px;
+    height: max-content;
+    flex-direction: column;
+    border-radius: 16px;
+    gap: 16px;
+    padding: 16px;
+    color: var(--color-white);
+    background-color: var(--color-darkslategray);
+    box-shadow: 0px 0px 2px 0px #0000001F, 0px 4px 8px 0px #00000024;
+}
+.feeling-box ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.feeling-box ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 85px;
+    gap: 6px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--color-gray-100);
+}
 
 
 @media screen and (max-width: 430px) {
     body {
+        box-sizing: border-box;
         padding: 33px 16px;
+        
     }
     .main {
         flex-wrap: wrap;
+        flex-basis: 398px;
+        padding: 0;
     }
     .news-box {
         display: none;
+    }
+    .row-box {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .left-box {
+        width: 398px;
+        padding-bottom: 0;
+    }
+    .right-box {
+        width: 391px;
+    }
+    .quotes-box {
+        width: 391px;
+    }
+    .feeling-box {
+        width: 391px;
+        height: max-content;
+    }
+    .feeling-box ul li {
+        min-width: 105px;
+    }
+    .left-box .email-box ul li div h5 {
+        width: 300px;
     }
 }
