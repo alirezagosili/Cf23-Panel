@@ -12,6 +12,8 @@
         --color-gray-500: rgba(255, 255, 255, 0.4);
         --color-darkslategray: #3d3d3d;
         --color-white: #fff;
+        --border-yellow: #FFC453;
+        --border-green: #29E489;
         /* fonts */
         --font-inter: Inter;
 }
@@ -36,6 +38,14 @@ h2 {
     line-height: 36px;
     text-align: left;
 }
+h3 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: var(--color-white);
+}
 .text {
     font-family: Inter;
     font-size: 12px;
@@ -56,6 +66,7 @@ h2 {
 
 .main {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
     border: 3px solid blue;
 }
@@ -66,6 +77,7 @@ h2 {
     border: 2px solid red;
     padding-bottom: 18px;
 }
+/* weather-box */
 .left-box .weather-box {
     display: flex;
     justify-content: space-between;
@@ -93,11 +105,29 @@ h2 {
     width: 100%;
     height: auto;
 }
+/* date-box */
 .left-box .date-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 398px;
     height: max-content;
     min-height: 194px;
-    max-width: 416px;
     border: 2px solid green;
+    border-radius: 16px;
+    padding: 16px;
+    color: var(--color-white);
+    background-color: var(--color-darkslategray);
+    box-shadow: 0px 0px 2px 0px #0000001F, 0px 4px 8px 0px #00000024;
+}
+.date-box ul li:first-child {
+    padding-left: 12px;
+    border-left:2px solid var(--border-yellow);
+    margin-bottom: 10px;
+}
+.date-box ul li:last-child {
+    padding-left: 12px;
+    border-left:2px solid var(--border-green);
 }
 .left-box .email-box {
     flex: 1;
