@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Panel</title>
-</head>
-<body class="container">
-    <main class="main safe-width">
-        <section class="left-box">
-            <div class="weather-box">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+        />
+        <link rel="stylesheet" href="css/main.css" />
+        <title>Panel</title>
+    </head>
+    <body class="container">
+        <main class="safe-width grid">
+            <div class="weather-box box-1">
                 <div class="weather-info">
                     <div>
                         <h1>Hello Jay</h1>
@@ -23,13 +28,15 @@
                         <h2>29°C</h2>
                         <p class="text">Tehran, Iran</p>
                     </div>
-
                 </div>
                 <div class="weather-icon">
-                    <img src="./assets/image/sun_behind_small_cloud.svg" alt="weather-image">
+                    <img
+                        src="./assets/image/sun_behind_small_cloud.svg"
+                        alt="weather-image"
+                    />
                 </div>
             </div>
-            <div class="date-box">
+            <div class="date-box box-2">
                 <div>
                     <h3>Tuesday, 11 Jun</h3>
                     <p class="text">Today’s agenda</p>
@@ -47,7 +54,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="email-box">
+            <div class="email-box box-3">
                 <div>
                     <h3>Email Inbox</h3>
                     <p class="text">javid.izadfar@gmail.com</p>
@@ -56,40 +63,47 @@
                     <ul>
                         <li>
                             <div class="image">
-                                <img src="./assets/icon/steam.svg"alt="steam-icon">
+                                <img
+                                    src="./assets/icon/steam.svg"
+                                    alt="steam-icon"
+                                />
                             </div>
                             <div class="pl-6">
-                                <h5>RoboCop: Rogue City from your Steam wishlist is now on sale!
+                                <h5>
+                                    RoboCop: Rogue City from your Steam wishlist
+                                    is now on sale!
                                 </h5>
                                 <p class="text">Steam</p>
                             </div>
                         </li>
                         <li>
                             <div class="image">
-                                <img src="./assets/icon/github.svg"alt="github-icon">
+                                <img
+                                    src="./assets/icon/github.svg"
+                                    alt="github-icon"
+                                />
                             </div>
                             <div class="pl-6">
-                                <h5>Destination: Poolside
-                                </h5>
+                                <h5>Destination: Poolside</h5>
                                 <p class="text">Github</p>
                             </div>
                         </li>
                         <li>
                             <div class="image">
-                                <img src="./assets/icon/H&m.svg"alt="H&m-icon">
+                                <img
+                                    src="./assets/icon/H&m.svg"
+                                    alt="H&m-icon"
+                                />
                             </div>
                             <div class="pl-6">
-                                <h5>Destination: Poolside
-                                </h5>
+                                <h5>Destination: Poolside</h5>
                                 <p class="text">H & M</p>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
-        </section>
-        <section class="right-box">
-            <div class="news-box">
+            <div class="news-box box-4">
                 <div class="navbar">
                     <ul>
                         <li>
@@ -104,60 +118,80 @@
                     </ul>
                 </div>
                 <div class="news-img">
-                    <img src="./assets/image/frame_1.jpg" alt="">
+                    <img src="./assets/image/frame_1.jpg" alt="" />
                     <div class="news-text">
-                        <p>Doom Eternal's long-awaited follow-up is a medieval prequel called Doom: The Dark Ages</p>
+                        <p>
+                            Doom Eternal's long-awaited follow-up is a medieval
+                            prequel called Doom: The Dark Ages
+                        </p>
                     </div>
                 </div>
             </div>
-            <section class="row-box">
-                <div class="quotes-box">
-                    <div class="quotes-info">
-                        <h3>Quote of the Day</h3>
-                        <p class="text">Make sure to remember</p>
-                    </div>
-                    <div class="quotes-text">
-                        <p class="text-l">If you can't dazzle them with brilliance, baffle them with bullshit.</p>
-                        <span class="text">W.C. Fields</span>
-                    </div>
+            <div class="quotes-box box-5">
+                <div class="quotes-info">
+                    <h3>Quote of the Day</h3>
+                    <p class="text">Make sure to remember</p>
                 </div>
-                <div class="feeling-box">
-                    <div>
-                        <h3>How are you feeling?</h3>
-                        <p class="text">Track your mood</p>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>
-                                <img src="./assets/icon/smiling_face.svg" alt="smiling_face">
-                                <span>Excellent</span>
-                            </li>
-                            <li>
-                                <img src="./assets/icon/emoji.svg" alt="Sleepy_face">
-                                <span>Sleepy</span>
-                            </li>
-                            <li>
-                                <img src="./assets/icon/face_with_thermometer.svg" alt="sick_face">
-                                <span>Sick</span>
-                            </li>
-                            <li>
-                                <img src="./assets/icon/drooling_face.svg" alt="Hungry_face">
-                                <span>Hungry</span>
-                            </li>
-                            <li>
-                                <img src="./assets/icon/hot_face.svg" alt="hot_face">
-                                <span>Hot</span>
-                            </li>
-                            <li>
-                                <img src="./assets/icon/face_with_diagonal_mouth_color 1.svg" alt="meh_face">
-                                <span>Meh</span>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="quotes-text div6">
+                    <p class="text-l">
+                        If you can't dazzle them with brilliance, baffle them
+                        with bullshit.
+                    </p>
+                    <span class="text">W.C. Fields</span>
                 </div>
-            </section>
-
-        </section>
-    </main>
-</body>
+            </div>
+            <div class="feeling-box box-6">
+                <div>
+                    <h3>How are you feeling?</h3>
+                    <p class="text">Track your mood</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <img
+                                src="./assets/icon/smiling_face.svg"
+                                alt="smiling_face"
+                            />
+                            <span>Excellent</span>
+                        </li>
+                        <li>
+                            <img
+                                src="./assets/icon/emoji.svg"
+                                alt="Sleepy_face"
+                            />
+                            <span>Sleepy</span>
+                        </li>
+                        <li>
+                            <img
+                                src="./assets/icon/face_with_thermometer.svg"
+                                alt="sick_face"
+                            />
+                            <span>Sick</span>
+                        </li>
+                        <li>
+                            <img
+                                src="./assets/icon/drooling_face.svg"
+                                alt="Hungry_face"
+                            />
+                            <span>Hungry</span>
+                        </li>
+                        <li>
+                            <img
+                                src="./assets/icon/hot_face.svg"
+                                alt="hot_face"
+                            />
+                            <span>Hot</span>
+                        </li>
+                        <li>
+                            <img
+                                src="./assets/icon/face_with_diagonal_mouth_color 1.svg"
+                                alt="meh_face"
+                            />
+                            <span>Meh</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>
