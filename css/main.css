@@ -307,11 +307,10 @@ a {
     body {
         box-sizing: border-box;
         padding: 33px 16px;
-        
+        margin: 0 auto;
     }
     .main {
         flex-wrap: wrap;
-        flex-basis: 398px;
         padding: 0;
     }
     .news-box {
@@ -322,23 +321,24 @@ a {
         flex-direction: column-reverse;
     }
     .left-box {
-        width: 398px;
+        width: 100%;
         padding-bottom: 0;
     }
     .right-box {
-        width: 391px;
+        width: 100%;
     }
     .quotes-box {
-        width: 391px;
+        width: 100%;
+        height: min-content;
     }
     .feeling-box {
-        width: 391px;
+        width: 100%;
         height: max-content;
     }
     .feeling-box ul li {
-        min-width: 105px;
+        min-width: 30%;
     }
     .left-box .email-box ul li div h5 {
-        width: 300px;
+        width: 65%;
     }
 }
